@@ -57,6 +57,10 @@ export const metadata: Metadata = {
       "Des images qui racontent vos moments. Concerts, mariages, festivals, entreprises, automobile et projets lifestyle.",
     images: ["/images/hero/hero-01.jpg"],
   },
+  icons: {
+    icon: "/images/brand/esteban-logo.png",
+    apple: "/images/brand/esteban-logo.png",
+  },
   robots: { index: true, follow: true },
 };
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { scrollToTarget } from "@/lib/scrollTo";
@@ -47,9 +48,16 @@ export default function Navbar() {
             : "border-b border-transparent bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 sm:px-10">
-          <Link href="/" className="font-serif-display text-lg tracking-tight text-ink">
-            Esteban
+        <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-2 sm:px-10">
+          <Link href="/" aria-label="Esteban — Accueil" className="block">
+            <Image
+              src="/images/brand/esteban-logo.png"
+              alt="Esteban"
+              width={1254}
+              height={1254}
+              priority
+              className="h-16 w-16 object-contain"
+            />
           </Link>
 
           <nav className="hidden items-center gap-8 font-sans text-[13px] tracking-[0.02em] text-ink lg:flex">

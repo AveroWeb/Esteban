@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -6,7 +7,13 @@ export default function Footer() {
       <div className="mx-auto max-w-[1600px]">
         <div className="grid grid-cols-2 gap-10 border-b border-paper/15 pb-14 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
-            <p className="font-serif-display text-2xl">Esteban</p>
+            <Image
+              src="/images/brand/esteban-logo.png"
+              alt="Esteban"
+              width={1254}
+              height={1254}
+              className="h-24 w-24 object-contain invert"
+            />
             <p className="mt-3 max-w-[220px] font-sans text-sm text-paper/60">
               Photographe basé à Millau, Aveyron — disponible partout.
             </p>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 type NavLink = { label: string; href: string; anchor: string | null };
@@ -23,8 +24,16 @@ export default function MobileMenu({
         pointerEvents: open ? "auto" : "none",
       }}
     >
-      <div className="flex items-center justify-between px-6 py-5">
-        <span className="font-serif-display text-lg text-ink">Esteban</span>
+      <div className="flex items-center justify-between px-6 py-2">
+        <Link href="/" onClick={onClose} aria-label="Esteban — Accueil">
+          <Image
+            src="/images/brand/esteban-logo.png"
+            alt="Esteban"
+            width={1254}
+            height={1254}
+            className="h-16 w-16 object-contain"
+          />
+        </Link>
         <button
           aria-label="Fermer le menu"
           onClick={onClose}
