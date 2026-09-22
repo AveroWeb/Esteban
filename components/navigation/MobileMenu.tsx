@@ -31,7 +31,7 @@ export default function MobileMenu({
             alt="Esteban"
             width={1254}
             height={1254}
-            className="h-16 w-16 object-contain"
+            className="h-20 w-20 object-contain"
           />
         </Link>
         <button

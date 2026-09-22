@@ -12,7 +12,7 @@ export default function Footer() {
               alt="Esteban"
               width={1254}
               height={1254}
-              className="h-24 w-24 object-contain invert"
+              className="h-32 w-32 object-contain invert"
             />
             <p className="mt-3 max-w-[220px] font-sans text-sm text-paper/60">
               Photographe basé à Millau, Aveyron — disponible partout.
