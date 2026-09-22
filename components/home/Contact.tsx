@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 
 const EVENT_TYPES = [
@@ -16,12 +15,23 @@ const EVENT_TYPES = [
 ];
 
 export default function Contact() {
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus("sending");
-    setTimeout(() => setStatus("sent"), 900);
+    const fields = new FormData(e.currentTarget);
+    const value = (name: string) => String(fields.get(name) ?? "").trim();
+    const subject = `Demande photo — ${value("eventType")}`;
+    const body = [
+      `Nom : ${value("name")}`,
+      `Email : ${value("email")}`,
+      `Téléphone : ${value("phone") || "Non renseigné"}`,
+      `Type de séance : ${value("eventType")}`,
+      `Date : ${value("date") || "À définir"}`,
+      `Lieu : ${value("location") || "À définir"}`,
+      "",
+      value("message"),
+    ].join("\n");
+
+    window.location.href = `mailto:esteban.dcs@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -111,16 +121,13 @@ export default function Contact() {
           <div className="sm:col-span-2">
             <button
               type="submit"
-              disabled={status !== "idle"}
-              className="rounded-full bg-ink px-8 py-3.5 font-sans text-sm text-paper transition-transform duration-300 hover:-translate-y-0.5 disabled:opacity-60"
+              className="rounded-full bg-ink px-8 py-3.5 font-sans text-sm text-paper transition-transform duration-300 hover:-translate-y-0.5"
             >
-              {status === "sent" ? "Demande envoyée" : status === "sending" ? "Envoi..." : "Envoyer ma demande"}
+              Préparer mon e-mail
             </button>
-            {status === "sent" && (
-              <p className="mt-3 font-sans text-sm text-slate">
-                Merci, votre demande a bien été prise en compte. Réponse sous 48h.
-              </p>
-            )}
+            <p className="mt-3 font-sans text-sm text-slate">
+              Votre messagerie s’ouvrira avec votre demande prête à envoyer.
+            </p>
           </div>
         </form>
       </div>

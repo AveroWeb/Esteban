@@ -20,7 +20,9 @@ const fraunces = Fraunces({
   style: ["normal", "italic"],
 });
 
-const siteUrl = "https://www.esteban-photographie.com";
+const siteUrl = process.env.GITHUB_PAGES === "true"
+  ? "https://averoweb.github.io/Esteban"
+  : "https://www.esteban-photographie.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -48,18 +50,18 @@ export const metadata: Metadata = {
     title: "Esteban — Photographe à Millau, Aveyron",
     description:
       "Des images qui racontent vos moments. Concerts, mariages, festivals, entreprises, automobile et projets lifestyle.",
-    images: ["/images/hero/hero-01.jpg"],
+    images: [`${siteUrl}/images/hero/hero-01.jpg`],
   },
   twitter: {
     card: "summary_large_image",
     title: "Esteban — Photographe à Millau, Aveyron",
     description:
       "Des images qui racontent vos moments. Concerts, mariages, festivals, entreprises, automobile et projets lifestyle.",
-    images: ["/images/hero/hero-01.jpg"],
+    images: [`${siteUrl}/images/hero/hero-01.jpg`],
   },
   icons: {
-    icon: "/images/brand/esteban-logo.png",
-    apple: "/images/brand/esteban-logo.png",
+    icon: `${siteUrl}/images/brand/esteban-logo.png`,
+    apple: `${siteUrl}/images/brand/esteban-logo.png`,
   },
   robots: { index: true, follow: true },
 };
