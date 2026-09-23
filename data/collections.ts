@@ -10,14 +10,11 @@ export type Collection = {
   slug: string;
   title: string;
   category:
-    | "Concert"
-    | "Mariage"
-    | "Festival"
+    | "Musique"
+    | "Événement"
     | "Entreprise"
-    | "Automobile"
-    | "Vol libre";
-  year: string;
-  location: string;
+    | "Vol libre"
+    | "Sport & aventure";
   cover: CollectionImage;
   previewImages: string[];
   description: string;
@@ -38,12 +35,10 @@ export const collections: Collection[] = [
   {
     id: "festival-horizon",
     slug: "festival-horizon",
-    title: "Festival Horizon",
-    category: "Festival",
-    year: "2026",
-    location: "Millau",
+    title: "À contre-courant",
+    category: "Sport & aventure",
     description:
-      "Trois jours de musique et de lumière au cœur des gorges — scènes, foule, coulisses et lever de soleil sur le camping.",
+      "Au fil des rapides et sur une highline, cette série suit le mouvement, l'effort et les instants d'équilibre en plein air.",
     cover: { src: "/images/client/A7400218.jpg", width: 3200, height: 2134, alt: "Kayak dans les rapides" },
     previewImages: [
       "/images/client/A7400198.jpg",
@@ -62,12 +57,10 @@ export const collections: Collection[] = [
   {
     id: "wedding-story",
     slug: "wedding-story",
-    title: "Wedding Story",
-    category: "Mariage",
-    year: "2026",
-    location: "Provence",
+    title: "Autour de la table",
+    category: "Événement",
     description:
-      "Une journée de mariage racontée sans mise en scène — préparatifs, cérémonie, émotions et fête jusqu'au bout de la nuit.",
+      "Une réception racontée à travers ses tables, ses couleurs et la lumière. Les détails donnent aussi une mémoire au lieu.",
     cover: { src: "/images/client/A7400114.jpg", width: 2133, height: 3200, alt: "Table dressée pour une réception" },
     previewImages: [
       "/images/client/A7400111.jpg",
@@ -84,12 +77,10 @@ export const collections: Collection[] = [
   {
     id: "night-session",
     slug: "night-session",
-    title: "Night Session",
-    category: "Concert",
-    year: "2026",
-    location: "Paris",
+    title: "Rythmes & portraits",
+    category: "Musique",
     description:
-      "Une salle parisienne, une scène, une foule dense — un concert capturé dans l'urgence et la basse qui vibre dans les murs.",
+      "De la musique en plein air aux portraits dans un décor brut, une sélection attentive aux gestes et à la lumière.",
     cover: { src: "/images/client/A7401068.jpg", width: 2133, height: 3200, alt: "DJ aux platines" },
     previewImages: [
       "/images/client/A7401075.jpg",
@@ -109,10 +100,8 @@ export const collections: Collection[] = [
     slug: "track-day",
     title: "Prendre l'air",
     category: "Vol libre",
-    year: "2026",
-    location: "Millau",
     description:
-      "Une journée au-dessus de Millau — préparation des ailes, décollages et instants suspendus entre ciel et reliefs.",
+      "Avant et pendant le vol : pilotes, préparation des ailes, décollages et silhouettes suspendues au-dessus du paysage.",
     cover: { src: "/images/client/A7408309.jpg", width: 2133, height: 3200, alt: "Décollage en parapente" },
     previewImages: [
       "/images/client/A7407412.jpg",
@@ -132,12 +121,10 @@ export const collections: Collection[] = [
   {
     id: "corporate-night",
     slug: "corporate-night",
-    title: "Corporate Night",
+    title: "Gestes de métier",
     category: "Entreprise",
-    year: "2026",
-    location: "Lyon",
     description:
-      "Soirée de lancement pour une entreprise lyonnaise — réseautage, scénographie et prises de parole devant les équipes.",
+      "Un reportage au cœur d'un site industriel : les personnes, leurs gestes et l'environnement dans lequel elles travaillent.",
     cover: { src: "/images/client/A7401591.jpg", width: 3200, height: 2133, alt: "Reportage dans un centre de tri" },
     previewImages: [
       "/images/client/A7401507.jpg",
@@ -154,12 +141,10 @@ export const collections: Collection[] = [
   {
     id: "summer-stage",
     slug: "summer-stage",
-    title: "Summer Stage",
-    category: "Concert",
-    year: "2026",
-    location: "Nice",
+    title: "Horizons libres",
+    category: "Sport & aventure",
     description:
-      "Un concert en plein air sur la Côte d'Azur — golden hour, scène et public qui se mélangent jusqu'à la nuit tombée.",
+      "De la neige profonde à la voile dans le ciel, une série sur les grands espaces et celles et ceux qui les traversent.",
     cover: { src: "/images/client/A7409816.jpg", width: 3200, height: 2133, alt: "Voile au coucher du soleil" },
     previewImages: [
       "/images/client/A7409806.jpg",
@@ -183,19 +168,17 @@ export const getCollectionBySlug = (slug: string) =>
 
 export const filterCategories = [
   "Toutes",
-  "Concerts",
-  "Mariages",
-  "Festivals",
+  "Événements",
+  "Musique",
   "Entreprises",
-  "Automobile",
+  "Sport & aventure",
   "Vol libre",
 ] as const;
 
 export const categoryToFilter: Record<Collection["category"], string> = {
-  Concert: "Concerts",
-  Mariage: "Mariages",
-  Festival: "Festivals",
+  Musique: "Musique",
+  Événement: "Événements",
   Entreprise: "Entreprises",
-  Automobile: "Automobile",
+  "Sport & aventure": "Sport & aventure",
   "Vol libre": "Vol libre",
 };

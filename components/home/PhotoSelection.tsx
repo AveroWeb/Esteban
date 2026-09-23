@@ -22,9 +22,9 @@ export default function PhotoSelection() {
         <div className="mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
           <div>
             <p className="mb-3 font-sans text-xs uppercase tracking-[0.25em] text-slate">Portfolio</p>
-            <h2 className="font-serif-display text-4xl tracking-tight text-ink sm:text-5xl">Sélection</h2>
+            <h2 className="editorial-reveal font-serif-display text-4xl tracking-tight text-ink sm:text-5xl">Des instants, des univers</h2>
           </div>
-          <p className="max-w-sm font-sans text-sm text-slate">Glissez les images ou choisissez une miniature pour parcourir la sélection.</p>
+          <p className="editorial-reveal max-w-md font-sans text-sm leading-relaxed text-slate">Une sélection de portraits, de reportages et de scènes en plein air. Faites défiler les images ou choisissez une miniature pour découvrir ces regards.</p>
         </div>
         <FramerThumbnails items={PHOTOS} />
       </div>

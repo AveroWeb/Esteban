@@ -76,13 +76,15 @@ export default function Hero() {
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-14 lg:grid-cols-12">
         <div ref={textRef} className="lg:col-span-6">
           <p className="mb-6 font-sans text-xs uppercase tracking-[0.25em] text-slate">
-            Esteban — Photographe à Millau, Aveyron
+            Esteban — photographie de reportage à Millau
           </p>
           <h1 className="font-serif-display text-[12vw] leading-[1.02] tracking-tight text-ink sm:text-[4.6vw]">
-            Des images qui racontent vos moments.
+            Vos histoires, telles qu’elles se vivent.
           </h1>
           <p className="mt-8 max-w-md font-sans text-base text-slate-dark">
-            Concerts, mariages, festivals, automobile, portraits et projets lifestyle.
+            Je photographie les personnes, les gestes et l&apos;énergie qui font votre histoire.
+            Sur scène, le jour d&apos;un mariage, au travail ou en plein air, je compose un
+            reportage fidèle à ce que vous avez vécu.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -90,7 +92,7 @@ export default function Hero() {
               href="/collections"
               className="rounded-full bg-ink px-7 py-3.5 font-sans text-sm text-paper transition-transform duration-300 hover:-translate-y-0.5"
             >
-              Découvrir les collections
+              Voir les reportages
             </Link>
             <a
               href="#contact"

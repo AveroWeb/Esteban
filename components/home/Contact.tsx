@@ -8,6 +8,8 @@ const EVENT_TYPES = [
   "Festival",
   "Entreprise",
   "Automobile",
+  "Sport & aventure",
+  "Vol libre",
   "Portrait",
   "Lifestyle",
   "Privé",
@@ -38,13 +40,15 @@ export default function Contact() {
     <section id="contact" className="bg-paper px-6 py-28 sm:px-10 sm:py-36">
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-5">
-          <h2 className="font-serif-display text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
-            Vous avez
+          <h2 className="editorial-reveal font-serif-display text-4xl leading-[1.05] tracking-tight text-ink sm:text-5xl">
+            Racontez-moi
             <br />
-            un projet ?
+            votre projet.
           </h2>
-          <p className="mt-6 max-w-sm font-sans text-base text-slate-dark">
-            Parlez-moi de votre projet et construisons quelque chose ensemble.
+          <p className="editorial-reveal mt-6 max-w-md font-sans text-base leading-relaxed text-slate-dark">
+            Un événement, une équipe, une aventure ou simplement une idée ? Dites-moi
+            ce que vous préparez, où cela se passe et les images que vous aimeriez garder.
+            Nous verrons ensemble la formule qui vous convient.
           </p>
 
           <div className="mt-10 flex flex-col gap-2 font-sans text-sm text-ink">
@@ -65,7 +69,7 @@ export default function Contact() {
           </div>
 
           <div className="relative mt-14 hidden h-56 w-44 overflow-hidden rounded-sm shadow-xl sm:block">
-            <div className="h-full w-full -rotate-2">
+            <div className="relative h-full w-full -rotate-2">
               <Image
                 src="/images/client/A7409801.jpg"
                 alt="Photographe en séance"
@@ -123,10 +127,10 @@ export default function Contact() {
               type="submit"
               className="rounded-full bg-ink px-8 py-3.5 font-sans text-sm text-paper transition-transform duration-300 hover:-translate-y-0.5"
             >
-              Préparer mon e-mail
+              Préparer ma demande
             </button>
             <p className="mt-3 font-sans text-sm text-slate">
-              Votre messagerie s’ouvrira avec votre demande prête à envoyer.
+              Votre messagerie s&apos;ouvrira avec votre message prérempli ; il ne restera qu&apos;à l&apos;envoyer.
             </p>
           </div>
         </form>

@@ -22,7 +22,7 @@ export default function CollectionCard({
       >
         <Image
           src={collection.cover.src}
-          alt={collection.title}
+          alt={collection.cover.alt}
           fill
           quality={92}
           sizes="(max-width: 640px) 100vw, 45vw"
@@ -37,7 +37,7 @@ export default function CollectionCard({
             {collection.title}
           </p>
           <p className="mt-1 font-sans text-xs uppercase tracking-[0.15em] text-paper/75">
-            {collection.category} — {collection.location} — {collection.year}
+            {collection.category}
           </p>
         </div>
         <span className="font-sans text-lg text-paper">↗</span>

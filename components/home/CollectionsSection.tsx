@@ -19,11 +19,12 @@ export default function CollectionsSection() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-10 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <h2 className="font-serif-display text-4xl tracking-tight text-ink sm:text-5xl">
-              Collections
+            <h2 className="editorial-reveal font-serif-display text-4xl tracking-tight text-ink sm:text-5xl">
+              Histoires en images
             </h2>
-            <p className="mt-3 max-w-md font-sans text-sm text-slate">
-              Quelques histoires capturées récemment.
+            <p className="editorial-reveal mt-3 max-w-xl font-sans text-sm leading-relaxed text-slate">
+              Du mouvement d&apos;un sportif aux gestes d&apos;une équipe, explorez des séries
+              qui montrent ma façon de regarder les personnes et les lieux.
             </p>
           </div>
         </div>
@@ -39,7 +40,7 @@ export default function CollectionsSection() {
             href="/collections"
             className="inline-block rounded-full border border-ink px-7 py-3.5 font-sans text-sm text-ink transition-colors duration-300 hover:bg-ink hover:text-paper"
           >
-            Voir toutes les collections
+            Explorer toutes les séries
           </Link>
         </div>
       </div>

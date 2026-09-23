@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteUrl } from "@/lib/site-url";
 import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
@@ -20,10 +21,6 @@ const fraunces = Fraunces({
   style: ["normal", "italic"],
 });
 
-const siteUrl = process.env.GITHUB_PAGES === "true"
-  ? "https://averoweb.github.io/Esteban"
-  : "https://www.esteban-photographie.com";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -31,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s — Esteban Photographie",
   },
   description:
-    "Esteban, photographe basé à Millau en Aveyron, disponible partout en France : concerts, mariages, festivals, entreprises, automobile et projets lifestyle. Des images qui racontent vos moments.",
+    "Esteban, photographe à Millau en Aveyron. Reportages vivants pour les événements, les entreprises, la musique, les portraits et les aventures en plein air.",
   keywords: [
     "photographe Millau",
     "photographe Aveyron",
@@ -49,14 +46,14 @@ export const metadata: Metadata = {
     siteName: "Esteban Photographie",
     title: "Esteban — Photographe à Millau, Aveyron",
     description:
-      "Des images qui racontent vos moments. Concerts, mariages, festivals, entreprises, automobile et projets lifestyle.",
+      "Des reportages vivants pour raconter vos événements, vos métiers et vos aventures en images.",
     images: [`${siteUrl}/images/hero/hero-01.jpg`],
   },
   twitter: {
     card: "summary_large_image",
     title: "Esteban — Photographe à Millau, Aveyron",
     description:
-      "Des images qui racontent vos moments. Concerts, mariages, festivals, entreprises, automobile et projets lifestyle.",
+      "Des reportages vivants pour raconter vos événements, vos métiers et vos aventures en images.",
     images: [`${siteUrl}/images/hero/hero-01.jpg`],
   },
   icons: {

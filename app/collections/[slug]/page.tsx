@@ -56,8 +56,6 @@ export default async function CollectionPage({
           </h1>
           <div className="mt-5 flex flex-wrap gap-x-8 gap-y-2 font-sans text-xs uppercase tracking-[0.2em] text-paper/85">
             <span>{collection.category}</span>
-            <span>{collection.location}</span>
-            <span>{collection.year}</span>
           </div>
         </div>
       </div>
@@ -87,7 +85,7 @@ export default async function CollectionPage({
           {nextCollection.title}
         </Link>
         <p className="mt-4 font-sans text-sm text-paper/60">
-          {nextCollection.category} — {nextCollection.year}
+          {nextCollection.category}
         </p>
       </div>
     </main>

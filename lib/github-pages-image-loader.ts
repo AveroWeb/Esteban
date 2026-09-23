@@ -5,10 +5,12 @@ export default function githubPagesImageLoader({
   src: string;
   width: number;
 }) {
+  const basePath = process.env.SITE_ASSET_BASE_PATH || "";
+
   if (src.startsWith("/images/client/") && /\.(?:jpe?g)$/i.test(src)) {
     const responsiveSrc = src.replace(/\.(?:jpe?g)$/i, "-" + width + ".webp");
-    return "/Esteban" + responsiveSrc;
+    return basePath + responsiveSrc;
   }
 
-  return "/Esteban" + src;
+  return basePath + src;
 }

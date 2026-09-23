@@ -10,22 +10,22 @@ const STEPS = [
   {
     index: "01",
     title: "Échange",
-    description: "On discute de votre événement et de vos besoins.",
+    description: "Vous me racontez votre projet, le lieu, les personnes et les images dont vous avez besoin.",
   },
   {
     index: "02",
     title: "Préparation",
-    description: "Je prépare le shooting, les horaires et les moments importants.",
+    description: "Nous repérons les temps forts et les contraintes pour que je sois prêt au bon moment.",
   },
   {
     index: "03",
     title: "Reportage",
-    description: "Je capture l'événement de manière naturelle et discrète.",
+    description: "Je photographie l'ambiance, les interactions et les détails sans casser le rythme de la journée.",
   },
   {
     index: "04",
     title: "Livraison",
-    description: "Vous recevez votre sélection retouchée en haute qualité.",
+    description: "Je trie et retouche la sélection, puis je vous remets des fichiers en haute qualité.",
   },
 ];
 
@@ -80,11 +80,12 @@ export default function Process() {
   return (
     <section ref={sectionRef} className="bg-paper px-6 py-28 sm:px-10 sm:py-36">
       <div className="mx-auto max-w-[1600px]">
-        <h2 className="mb-4 font-serif-display text-4xl tracking-tight text-ink sm:text-5xl">
-          Comment ça se passe ?
+        <h2 className="editorial-reveal mb-4 font-serif-display text-4xl tracking-tight text-ink sm:text-5xl">
+          De votre idée aux images finales
         </h2>
-        <p className="mb-16 max-w-md font-sans text-sm text-slate">
-          Un déroulement simple, du premier échange à la livraison finale.
+        <p className="editorial-reveal mb-16 max-w-xl font-sans text-sm leading-relaxed text-slate">
+          Un reportage se prépare ensemble. Vous savez à chaque étape ce que nous allons faire,
+          tout en laissant de la place aux instants imprévus.
         </p>
 
         <div className="relative flex flex-col gap-12 sm:flex-row sm:gap-6">

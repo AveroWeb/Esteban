@@ -33,6 +33,8 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: "true"
+          GITHUB_PAGES_CUSTOM_DOMAIN: "true"
+          GITHUB_PAGES_DOMAIN: "esteban-photographe.fr"
       - run: touch out/.nojekyll
       - run: python scripts/prepare-pages-artifact.py
       - uses: actions/upload-pages-artifact@v3

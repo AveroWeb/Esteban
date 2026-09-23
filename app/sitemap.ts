@@ -1,11 +1,8 @@
 import type { MetadataRoute } from "next";
 import { collections } from "@/data/collections";
+import { siteUrl } from "@/lib/site-url";
 
 export const dynamic = "force-static";
-
-const siteUrl = process.env.GITHUB_PAGES === "true"
-  ? "https://averoweb.github.io/Esteban"
-  : "https://www.esteban-photographie.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

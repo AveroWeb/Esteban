@@ -15,7 +15,7 @@ export default function Footer() {
               className="h-32 w-32 object-contain invert"
             />
             <p className="mt-3 max-w-[220px] font-sans text-sm text-paper/60">
-              Photographe basé à Millau, Aveyron — disponible partout.
+              Reportages photo à Millau et ailleurs : événements, personnes, métiers et plein air.
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-3 pt-6 font-sans text-xs text-paper/50 sm:flex-row sm:items-center">
           <span>© 2026 Esteban. Tous droits réservés.</span>
-          <span>Photographe basé à Millau, Aveyron — disponible partout.</span>
+          <span>Photographe basé à Millau, Aveyron.</span>
         </div>
       </div>
     </footer>

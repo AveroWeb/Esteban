@@ -6,7 +6,7 @@ import About from "@/components/home/About";
 import PhotoSelection from "@/components/home/PhotoSelection";
 import Process from "@/components/home/Process";
 import PhotoMarquee from "@/components/home/PhotoMarquee";
-import Testimonials from "@/components/home/Testimonials";
+import Deliverables from "@/components/home/Deliverables";
 import Contact from "@/components/home/Contact";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <PhotoSelection />
       <Process />
       <PhotoMarquee />
-      <Testimonials />
+      <Deliverables />
       <Contact />
     </main>
   );
