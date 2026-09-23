@@ -5,7 +5,7 @@ const isGitHubPages = process.env.GITHUB_PAGES === "true";
 const nextConfig: NextConfig = {
   ...(isGitHubPages && {
     output: "export",
-    basePath: "/Esteban",
+    basePath: "",
     trailingSlash: true,
   }),
   images: {
