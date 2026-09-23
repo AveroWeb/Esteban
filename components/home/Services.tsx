@@ -48,7 +48,7 @@ export default function Services() {
                     src={service.image}
                     alt={service.title}
                     fill
-                    quality={100}
+                    quality={92}
                     sizes="64px"
                     className="object-cover"
                   />

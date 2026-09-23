@@ -110,7 +110,7 @@ export default function Hero() {
               src="/images/client/A7400218.jpg"
               alt="Ambiance événement"
               fill
-              quality={100}
+              quality={92}
               sizes="30vw"
               className="object-cover"
             />
@@ -124,7 +124,7 @@ export default function Hero() {
               src="/images/client/A7409809.jpg"
               alt="Photographie événementielle"
               fill
-              quality={100}
+              quality={92}
               sizes="35vw"
               className="object-cover"
             />
@@ -139,7 +139,7 @@ export default function Hero() {
               alt="Reportage événementiel"
               fill
               priority
-              quality={100}
+              quality={92}
               sizes="45vw"
               className="object-cover"
             />

@@ -91,7 +91,7 @@ export default function FramerThumbnails({ items }: { items: PortfolioItem[] }) 
                 src={item.src}
                 alt={item.alt}
                 fill
-                quality={100}
+                quality={92}
                 priority={itemIndex === 0}
                 sizes="(max-width: 640px) 100vw, 1600px"
                 draggable={false}
@@ -133,7 +133,7 @@ export default function FramerThumbnails({ items }: { items: PortfolioItem[] }) 
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
               className="relative h-full shrink-0 overflow-hidden bg-mist focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
             >
-              <Image src={item.src} alt="" fill quality={100} sizes={itemIndex === index ? "150px" : "42px"} className={`object-cover transition duration-300 ${itemIndex === index ? "opacity-100" : "opacity-55 grayscale hover:opacity-90"}`} />
+              <Image src={item.src} alt="" fill quality={92} sizes={itemIndex === index ? "150px" : "42px"} className={`object-cover transition duration-300 ${itemIndex === index ? "opacity-100" : "opacity-55 grayscale hover:opacity-90"}`} />
               {itemIndex === index && <span className="absolute inset-x-0 bottom-0 h-0.5 bg-paper" />}
             </motion.button>
           ))}

@@ -27,7 +27,7 @@ export default function PhotoMarquee() {
               src={src}
               alt="Photographie par Esteban"
               fill
-              quality={100}
+              quality={92}
               sizes="360px"
               className="object-cover"
             />

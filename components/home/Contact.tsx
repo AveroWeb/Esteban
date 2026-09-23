@@ -70,7 +70,7 @@ export default function Contact() {
                 src="/images/client/A7409801.jpg"
                 alt="Photographe en séance"
                 fill
-                quality={100}
+                quality={92}
                 sizes="200px"
                 className="object-cover"
               />

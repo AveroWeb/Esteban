@@ -58,7 +58,7 @@ export default function About() {
                 src="/images/client/A7409809.jpg"
                 alt="Le photographe en action"
                 fill
-                quality={100}
+                quality={92}
                 sizes="45vw"
                 className="object-cover"
               />
@@ -71,7 +71,7 @@ export default function About() {
                 src="/images/client/A7409454.jpg"
                 alt="Détail du travail du photographe"
                 fill
-                quality={100}
+                quality={92}
                 sizes="30vw"
                 className="object-cover"
               />

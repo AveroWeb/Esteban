@@ -44,7 +44,7 @@ export default async function CollectionPage({
           alt={collection.cover.alt}
           fill
           priority
-          quality={100}
+          quality={92}
           sizes="100vw"
           className="object-cover"
         />

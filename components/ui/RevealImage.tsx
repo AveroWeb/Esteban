@@ -123,7 +123,7 @@ export default function RevealImage({
           src={src}
           alt={alt}
           fill
-          quality={100}
+          quality={92}
           sizes={sizes}
           priority={priority}
           className="object-cover"

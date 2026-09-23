@@ -34,9 +34,10 @@ jobs:
         env:
           GITHUB_PAGES: "true"
       - run: touch out/.nojekyll
+      - run: python scripts/prepare-pages-artifact.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: pages-artifact
 
   deploy:
     environment:

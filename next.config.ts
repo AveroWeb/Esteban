@@ -9,7 +9,9 @@ const nextConfig: NextConfig = {
     trailingSlash: true,
   }),
   images: {
-    qualities: [100],
+    qualities: [92],
+    deviceSizes: [640, 960, 1280, 1600, 1920, 2560, 3200],
+    imageSizes: [320],
     ...(isGitHubPages && {
       loader: "custom",
       loaderFile: "./lib/github-pages-image-loader.ts",
