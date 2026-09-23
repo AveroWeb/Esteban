@@ -43,11 +43,11 @@ export default function CollectionCard({
       onMouseLeave={stopCycle}
       className={`group relative block overflow-hidden rounded-sm bg-mist ${
         wide ? "sm:col-span-2" : ""
-      } ${tall ? "row-span-2" : ""}`}
+      } ${tall ? "sm:row-span-2" : ""}`}
     >
       <div
-        className="relative w-full overflow-hidden"
-        style={{ aspectRatio: tall ? "3/4" : wide ? "16/9" : "4/5" }}
+        className={`relative w-full overflow-hidden ${tall ? "h-full" : ""}`}
+        style={{ aspectRatio: tall ? undefined : wide ? "16/9" : "4/5" }}
       >
         {previews.map((src, i) => (
           <Image
