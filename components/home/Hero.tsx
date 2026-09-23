@@ -109,8 +109,8 @@ export default function Hero() {
             className="absolute right-0 top-6 h-[46%] w-[42%] overflow-hidden rounded-sm sm:top-10"
           >
             <Image
-              src="/images/client/A7400218.jpg"
-              alt="Ambiance événement"
+              src="/images/client/A7401075.jpg"
+              alt="DJ aux platines lors d'un événement en plein air"
               fill
               quality={92}
               sizes="30vw"
