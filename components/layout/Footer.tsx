@@ -70,7 +70,20 @@ export default function Footer() {
 
         <div className="flex flex-col items-start justify-between gap-3 pt-6 font-sans text-xs text-paper/50 sm:flex-row sm:items-center">
           <span>© 2026 Esteban. Tous droits réservés.</span>
-          <span>Photographe basé à Millau, Aveyron.</span>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-5">
+            <span>Photographe basé à Millau, Aveyron.</span>
+            <span>
+              Fait par{" "}
+              <a
+                href="https://averoweb.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-underline text-paper/75"
+              >
+                AveroWeb
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </footer>

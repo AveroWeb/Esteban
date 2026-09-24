@@ -61,7 +61,7 @@ export default function Contact() {
               rel="noreferrer"
               className="link-underline w-fit"
             >
-              Instagram
+              Voir le profil Instagram ↗
             </a>
             <a href="tel:+33680062075" className="link-underline w-fit">
               +33 6 80 06 20 75

@@ -76,7 +76,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-14 lg:grid-cols-12">
         <div ref={textRef} className="lg:col-span-6">
           <p className="mb-6 font-sans text-xs uppercase tracking-[0.25em] text-slate">
-            Esteban — photographie de reportage à Millau
+            Esteban — photographe à Millau
           </p>
           <h1 className="font-serif-display text-[12vw] leading-[1.02] tracking-tight text-ink sm:text-[4.6vw]">
             Vos histoires, telles qu’elles se vivent.
@@ -109,12 +109,12 @@ export default function Hero() {
             className="absolute right-0 top-6 h-[46%] w-[42%] overflow-hidden rounded-sm sm:top-10"
           >
             <Image
-              src="/images/client/A7401075.jpg"
-              alt="DJ aux platines lors d'un événement en plein air"
+              src="/images/client/A7409801.jpg"
+              alt="Photographe en montagne avec son chien"
               fill
               quality={92}
               sizes="30vw"
-              className="object-cover"
+              className="object-cover scale-x-[-1]"
             />
           </div>
 
