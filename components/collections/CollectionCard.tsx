@@ -33,14 +33,14 @@ export default function CollectionCard({
 
       <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 sm:p-6">
         <div>
-          <p className="font-serif-display text-xl text-paper sm:text-2xl">
+          <p className="font-serif-display text-xl text-paper-contrast sm:text-2xl">
             {collection.title}
           </p>
-          <p className="mt-1 font-sans text-xs uppercase tracking-[0.15em] text-paper/75">
+          <p className="mt-1 font-sans text-xs uppercase tracking-[0.15em] text-paper-contrast/75">
             {collection.category}
           </p>
         </div>
-        <span className="font-sans text-lg text-paper">↗</span>
+        <span className="font-sans text-lg text-paper-contrast">↗</span>
       </div>
     </Link>
   );

@@ -51,10 +51,10 @@ export default async function CollectionPage({
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
 
         <div className="absolute inset-x-0 bottom-0 px-6 pb-10 sm:px-10 sm:pb-14">
-          <h1 className="font-serif-display text-[11vw] leading-[0.95] tracking-tight text-paper sm:text-[5vw]">
+          <h1 className="font-serif-display text-[11vw] leading-[0.95] tracking-tight text-paper-contrast sm:text-[5vw]">
             {collection.title}
           </h1>
-          <div className="mt-5 flex flex-wrap gap-x-8 gap-y-2 font-sans text-xs uppercase tracking-[0.2em] text-paper/85">
+          <div className="mt-5 flex flex-wrap gap-x-8 gap-y-2 font-sans text-xs uppercase tracking-[0.2em] text-paper-contrast/85">
             <span>{collection.category}</span>
           </div>
         </div>

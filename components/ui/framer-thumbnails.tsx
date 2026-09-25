@@ -98,12 +98,12 @@ export default function FramerThumbnails({ items }: { items: PortfolioItem[] }) 
                 className="pointer-events-none select-none object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/10" />
-              <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-6 p-6 text-paper sm:p-9">
+              <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-6 p-6 text-paper-contrast sm:p-9">
                 <div>
-                  <p className="text-[10px] uppercase tracking-[0.24em] text-paper/65">{item.eyebrow}</p>
+                  <p className="text-[10px] uppercase tracking-[0.24em] text-paper-contrast/65">{item.eyebrow}</p>
                   <h3 className="mt-2 font-serif-display text-3xl tracking-tight sm:text-5xl">{item.title}</h3>
                 </div>
-                <p className="shrink-0 font-sans text-xs tracking-[0.18em] text-paper/70">
+                <p className="shrink-0 font-sans text-xs tracking-[0.18em] text-paper-contrast/70">
                   {String(itemIndex + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
                 </p>
               </figcaption>

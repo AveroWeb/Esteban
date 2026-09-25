@@ -1,15 +1,27 @@
 @import "tailwindcss";
 
 :root {
+  --paper: #111110;
+  --paper-contrast: #f6f5f2;
+  --ink: #f3f1eb;
+  --mist: #292925;
+  --slate: #aaa9a2;
+  --slate-dark: #d0cec7;
+  color-scheme: dark;
+}
+
+:root[data-theme-preview="dark"] footer {
   --paper: #f6f5f2;
   --ink: #111110;
-  --mist: #e4e2dc;
-  --slate: #6b6a65;
-  --slate-dark: #3a3a37;
+}
+
+:root[data-theme-preview="dark"] header img {
+  filter: invert(1);
 }
 
 @theme inline {
   --color-paper: var(--paper);
+  --color-paper-contrast: var(--paper-contrast);
   --color-ink: var(--ink);
   --color-mist: var(--mist);
   --color-slate: var(--slate);

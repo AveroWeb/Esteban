@@ -4,6 +4,7 @@ const isGitHubPages = process.env.GITHUB_PAGES === "true";
 const isProjectPage = isGitHubPages && process.env.GITHUB_PAGES_CUSTOM_DOMAIN !== "true";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["127.0.0.1"],
   ...(isGitHubPages && {
     output: "export",
     ...(isProjectPage && { basePath: "/Esteban" }),

@@ -48,11 +48,11 @@ export default function Lightbox({
   const image = images[index];
 
   return (
-    <div className="fixed inset-0 z-[250] flex items-center justify-center bg-ink/95 px-4 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[250] flex items-center justify-center bg-black/95 px-4 backdrop-blur-sm">
       <button
         onClick={onClose}
         aria-label="Fermer"
-        className="absolute right-6 top-6 font-sans text-2xl text-paper transition-opacity hover:opacity-70"
+        className="absolute right-6 top-6 font-sans text-2xl text-paper-contrast transition-opacity hover:opacity-70"
       >
         ×
       </button>
@@ -60,7 +60,7 @@ export default function Lightbox({
       <button
         onClick={goPrev}
         aria-label="Précédent"
-        className="absolute left-4 font-sans text-2xl text-paper transition-opacity hover:opacity-70 sm:left-8"
+        className="absolute left-4 font-sans text-2xl text-paper-contrast transition-opacity hover:opacity-70 sm:left-8"
       >
         ←
       </button>
@@ -79,12 +79,12 @@ export default function Lightbox({
       <button
         onClick={goNext}
         aria-label="Suivant"
-        className="absolute right-4 font-sans text-2xl text-paper transition-opacity hover:opacity-70 sm:right-8"
+        className="absolute right-4 font-sans text-2xl text-paper-contrast transition-opacity hover:opacity-70 sm:right-8"
       >
         →
       </button>
 
-      <p className="absolute bottom-6 font-sans text-xs tracking-[0.2em] text-paper/60">
+      <p className="absolute bottom-6 font-sans text-xs tracking-[0.2em] text-paper-contrast/60">
         {index + 1} / {images.length}
       </p>
     </div>
