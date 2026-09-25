@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ArrowUpRight from "@/components/ui/ArrowUpRight";
 
 const EVENT_TYPES = [
   "Concert",
@@ -61,7 +62,10 @@ export default function Contact() {
               rel="noreferrer"
               className="link-underline w-fit"
             >
-              Voir le profil Instagram ↗
+              <span className="inline-flex items-center gap-1.5">
+                Voir le profil Instagram
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </span>
             </a>
             <a href="tel:+33680062075" className="link-underline w-fit">
               +33 6 80 06 20 75

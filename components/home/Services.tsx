@@ -1,4 +1,5 @@
 import { services } from "@/data/services";
+import ArrowUpRight from "@/components/ui/ArrowUpRight";
 
 export default function Services() {
   return (
@@ -36,8 +37,8 @@ export default function Services() {
                 </p>
               </div>
 
-              <span aria-hidden="true" className="absolute right-0 top-7 font-sans text-xl text-ink transition-transform duration-500 group-hover:translate-x-1 sm:top-1/2 sm:-translate-y-1/2">
-                ↗
+              <span aria-hidden="true" className="absolute right-0 top-7 text-ink transition-transform duration-500 group-hover:translate-x-1 sm:top-1/2 sm:-translate-y-1/2">
+                <ArrowUpRight className="h-5 w-5" />
               </span>
             </a>
           ))}

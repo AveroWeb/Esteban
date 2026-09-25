@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Collection } from "@/data/collections";
+import ArrowUpRight from "@/components/ui/ArrowUpRight";
 
 export default function CollectionCard({
   collection,
@@ -40,7 +41,7 @@ export default function CollectionCard({
             {collection.category}
           </p>
         </div>
-        <span className="font-sans text-lg text-paper-contrast">↗</span>
+        <ArrowUpRight className="h-5 w-5 text-paper-contrast" />
       </div>
     </Link>
   );
