@@ -38,20 +38,32 @@ export const collections: Collection[] = [
     title: "À contre-courant",
     category: "Sport & aventure",
     description:
-      "Au fil des rapides et sur une highline, cette série suit le mouvement, l'effort et les instants d'équilibre en plein air.",
+      "Dans les rapides, cette série suit le kayak au plus près : le mouvement de l'eau, l'effort et l'énergie des passages.",
     cover: { src: "/images/client/A7400218.jpg", width: 3200, height: 2134, alt: "Kayak dans les rapides" },
     previewImages: [
       "/images/client/A7400198.jpg",
       "/images/client/A7400216.jpg",
-      "/images/client/A7401147.jpg",
+      "/images/client/A7400176.jpg",
     ],
     images: clientGallery([
       ["A7400218", 3200, 2134, "Kayak rose dans les rapides"],
       ["A7400198", 2133, 3200, "Kayakiste dans les rochers"],
       ["A7400216", 3200, 2133, "Passage en kayak sur une rivière"],
       ["A7400176", 2133, 3200, "Kayakiste dans les eaux vives"],
-      ["A7401147", 2133, 3200, "Figure aérienne sur une highline"],
-      ["A7401148", 2133, 3200, "Athlète en équilibre dans le ciel"],
+    ]),
+  },
+  {
+    id: "highline",
+    slug: "en-equilibre",
+    title: "En équilibre",
+    category: "Sport & aventure",
+    description:
+      "Au-dessus du paysage, cette série suit la slackline : la concentration, les gestes précis et l'équilibre suspendu dans le vide.",
+    cover: { src: "/images/client/A7401147.jpg", width: 2133, height: 3200, alt: "Athlète sur une slackline" },
+    previewImages: ["/images/client/A7401148.jpg"],
+    images: clientGallery([
+      ["A7401147", 2133, 3200, "Athlète en équilibre sur une slackline"],
+      ["A7401148", 2133, 3200, "Slackline au-dessus du paysage"],
     ]),
   },
   {
@@ -64,35 +76,33 @@ export const collections: Collection[] = [
     cover: { src: "/images/client/A7400114.jpg", width: 2133, height: 3200, alt: "Table dressée pour une réception" },
     previewImages: [
       "/images/client/A7400111.jpg",
-      "/images/client/A7400116.jpg",
       "/images/client/A7400122.jpg",
     ],
     images: clientGallery([
       ["A7400114", 2133, 3200, "Table dressée pour une réception"],
       ["A7400111", 2133, 3200, "Détail coloré d'une table d'été"],
-      ["A7400116", 2133, 3200, "Ambiance d'un repas en extérieur"],
       ["A7400122", 2133, 3200, "Verres et fleurs au soleil"],
     ]),
   },
   {
     id: "night-session",
     slug: "night-session",
-    title: "Rythmes & portraits",
+    title: "Portraits & rythmes",
     category: "Musique",
     description:
-      "De la musique en plein air aux portraits dans un décor brut, une sélection attentive aux gestes et à la lumière.",
-    cover: { src: "/images/client/A7401068.jpg", width: 2133, height: 3200, alt: "DJ aux platines" },
+      "Des portraits dans un décor brut ouvrent cette série, suivis de scènes musicales où les gestes et la lumière racontent l'énergie du live.",
+    cover: { src: "/images/client/A7409454.jpg", width: 3200, height: 2133, alt: "Portrait dans une friche industrielle" },
     previewImages: [
-      "/images/client/A7401075.jpg",
-      "/images/client/A7409445.jpg",
       "/images/client/A7409454.jpg",
+      "/images/client/A7409456.jpg",
+      "/images/client/A7409445.jpg",
     ],
     images: clientGallery([
+      ["A7409454", 3200, 2133, "Portrait dans une friche industrielle"],
+      ["A7409456", 3200, 2133, "Portrait à la lumière naturelle dans un bâtiment abandonné"],
+      ["A7409445", 2134, 3200, "Silhouette dans un lieu brut"],
       ["A7401068", 2133, 3200, "DJ aux platines"],
       ["A7401075", 2133, 3200, "Performance musicale en plein air"],
-      ["A7409445", 2134, 3200, "Silhouette dans un lieu brut"],
-      ["A7409454", 3200, 2133, "Portrait dans une friche industrielle"],
-      ["A7409456", 3200, 2133, "Lumière naturelle dans un bâtiment abandonné"],
     ]),
   },
   {

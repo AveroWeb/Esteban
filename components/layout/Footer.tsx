@@ -15,7 +15,7 @@ export default function Footer() {
               className="h-32 w-32 object-contain invert"
             />
             <p className="mt-3 max-w-[220px] font-sans text-sm text-paper/60">
-              Reportages photo à Millau et ailleurs : événements, personnes, métiers et plein air.
+              À Millau et ailleurs : événements, personnes, métiers et plein air.
             </p>
           </div>
 
